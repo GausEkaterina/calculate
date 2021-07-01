@@ -292,6 +292,7 @@ namespace Practicalculate
             this.button20.TabIndex = 21;
             this.button20.Text = "ln(x)";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
@@ -302,6 +303,7 @@ namespace Practicalculate
             this.button21.TabIndex = 22;
             this.button21.Text = "|x|";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // Form1
             // 

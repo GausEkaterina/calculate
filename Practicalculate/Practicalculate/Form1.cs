@@ -74,6 +74,40 @@ namespace Practicalculate
                 return (firstValue * secondValue);
             }
         }
+        static class Class2
+        {
+
+            public static calculator1 cal1(int count)
+            {
+                switch (count)
+                {
+                    case 5:
+                        return new MODULE();
+                    case 6:
+                        return new LOG();
+                    default:
+                        return new MODULE(); // заглушка "для невозможного варианта"
+                }
+            }
+        }
+        interface calculator1
+        {
+            double Calculate(double firstValue);
+        }
+        public class MODULE : calculator1
+        {
+            public double Calculate(double firstValue)
+            {
+                return Math.Abs(firstValue);
+            }
+        }
+        public class LOG : calculator1
+        {
+            public double Calculate(double firstValue)
+            {
+                return Math.Log(firstValue);
+            }
+        }
         private void button4_Click(object sender, EventArgs e) //кнопка умножения
         {
             if (textBox1.Text != "")
@@ -86,7 +120,6 @@ namespace Practicalculate
             }
             dot = false;
         }
-
         private void button8_Click(object sender, EventArgs e)//2
         {
             textBox1.Text = textBox1.Text + 2;
@@ -189,6 +222,11 @@ namespace Practicalculate
                 calculator2 calculator = Class1.cal2(count);
                 result = calculator.Calculate(digit, digit2);
             }
+            else
+            {
+                calculator1 calculator = Class2.cal1(count);
+                result = calculator.Calculate(digit);
+            }
             textBox1.Text = result.ToString();
             dot = false;
             label1.Text = "";
@@ -229,6 +267,32 @@ namespace Practicalculate
             {
                 e.Handled = true;
             }
+        }
+
+        private void button21_Click(object sender, EventArgs e) //кнопка вычисления модуля
+        {
+            if (textBox1.Text != "")
+            {
+                digit = double.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 5;
+                label1.Text = digit.ToString() + "";
+                sign = true;
+            }
+            dot = false;
+        }
+
+        private void button20_Click(object sender, EventArgs e) //кнопка вычисления логарифма
+        {
+            if (textBox1.Text != "")
+            {
+                digit = double.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 6;
+                label1.Text = digit.ToString() + "ln";
+                sign = true;
+            }
+            dot = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
