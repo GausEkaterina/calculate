@@ -56,12 +56,14 @@ namespace Practicalculate
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(312, 52);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label1
             // 
@@ -92,6 +94,7 @@ namespace Practicalculate
             this.button2.TabIndex = 3;
             this.button2.Text = "<-";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -102,6 +105,7 @@ namespace Practicalculate
             this.button3.TabIndex = 4;
             this.button3.Text = "/";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -123,6 +127,7 @@ namespace Practicalculate
             this.button5.TabIndex = 6;
             this.button5.Text = "+";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -133,6 +138,7 @@ namespace Practicalculate
             this.button6.TabIndex = 7;
             this.button6.Text = "=";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -143,6 +149,7 @@ namespace Practicalculate
             this.button7.TabIndex = 8;
             this.button7.Text = "1";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -164,6 +171,7 @@ namespace Practicalculate
             this.button9.TabIndex = 10;
             this.button9.Text = "3";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -185,6 +193,7 @@ namespace Practicalculate
             this.button11.TabIndex = 12;
             this.button11.Text = "5";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -195,6 +204,7 @@ namespace Practicalculate
             this.button12.TabIndex = 13;
             this.button12.Text = "6";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -205,6 +215,7 @@ namespace Practicalculate
             this.button13.TabIndex = 14;
             this.button13.Text = "7";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -215,6 +226,7 @@ namespace Practicalculate
             this.button14.TabIndex = 15;
             this.button14.Text = "8";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -225,6 +237,7 @@ namespace Practicalculate
             this.button15.TabIndex = 16;
             this.button15.Text = "9";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -235,6 +248,7 @@ namespace Practicalculate
             this.button16.TabIndex = 17;
             this.button16.Text = ".";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -245,6 +259,7 @@ namespace Practicalculate
             this.button17.TabIndex = 18;
             this.button17.Text = "0";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -255,6 +270,7 @@ namespace Practicalculate
             this.button18.TabIndex = 19;
             this.button18.Text = "+/-";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -265,6 +281,7 @@ namespace Practicalculate
             this.button19.TabIndex = 20;
             this.button19.Text = "-";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button20
             // 
