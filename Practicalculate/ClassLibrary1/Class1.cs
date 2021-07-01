@@ -68,7 +68,7 @@ namespace ClassLibrary1
         [TestCase(0, 0)]
         [TestCase(3, 3)]
         [TestCase(-6, 6)]
-        public void CalculateTests(double firstValue, double secondValue, double expected)
+        public void CalculateTests(double firstValue, double expected)
         {
             //ARRANGE
             var calc = new MODULE();
@@ -83,7 +83,7 @@ namespace ClassLibrary1
         [TestCase(0, 0)]
         [TestCase(10, 2.302585092994)]
         [TestCase(-4, 1.3862943611199 + 3.1415926535898)]
-        public void CalculateTests(double firstValue, double secondValue, double expected)
+        public void CalculateTests(double firstValue, double expected)
         {
             //ARRANGE
             var calc = new LOG();
